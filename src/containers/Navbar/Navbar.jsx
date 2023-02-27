@@ -1,13 +1,14 @@
 import React from "react";
 import { IconSteam } from "@tabler/icons-react";
+import { Link } from "react-router-dom";
 
-export default function Header() {
+export default function Navbar() {
   return (
-    <header className="navbar bg-base-200">
+    <header className="navbar bg-primary">
       <nav className="navbar-start">
-        <button className="btn-ghost btn hidden text-lg normal-case md:flex">
+        {/* <button className="btn-ghost btn hidden text-lg normal-case md:flex">
           Dashboard
-        </button>
+        </button> */}
         <button className="btn-ghost btn md:hidden">
           <IconSteam size={32} className="w-14" />
         </button>
@@ -16,7 +17,7 @@ export default function Header() {
         <input
           type="text"
           placeholder="Search"
-          className="input input-sm max-w-xs"
+          className="input-bordered input input-sm hidden max-w-xs md:block"
         />
         <div className="dropdown-end dropdown">
           <label tabIndex={0} className="btn-ghost btn-circle avatar btn">
@@ -32,16 +33,19 @@ export default function Header() {
             className="dropdown-content menu rounded-box menu-compact mt-3 w-52 bg-base-100 p-2 shadow"
           >
             <li>
-              <span className="justify-between">
-                Profile
-                <span className="badge">New</span>
-              </span>
+              <Link to="/dashboard/settings">
+                <span className="justify-between">Profile</span>
+              </Link>
             </li>
             <li>
-              <span>Settings</span>
+              <Link to="/dashboard/settings">
+                <span>Settings</span>
+              </Link>
             </li>
             <li>
-              <span>Logout</span>
+              <Link to="/">
+                <span>Logout</span>
+              </Link>
             </li>
           </ul>
         </div>

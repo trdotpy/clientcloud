@@ -4,7 +4,7 @@ import Views from "./Views";
 
 export default function Dashboard() {
   return (
-    <div className="drawer-mobile drawer bg-base-300">
+    <div className="drawer-mobile drawer">
       <input
         className="drawer-toggle"
         type="checkbox"

@@ -14,7 +14,7 @@ function MenuItem({ path, name, icon, isActive }) {
       {icon} {name}
       {isActive && (
         <span
-          className="absolute inset-y-0 right-0 w-1 rounded-tr-md rounded-br-md bg-primary"
+          className="absolute inset-y-0 right-0 w-1 rounded-tr-md rounded-br-md bg-secondary"
           aria-hidden="true"
         ></span>
       )}
@@ -42,7 +42,7 @@ function DropdownMenu({ dropdown }) {
           {dropdown[0].icon} {dropdown[0].name}
         </div>
         <IconChevronDown
-          className={`h-5 w-5 transition-all delay-300 duration-700 ${
+          className={`h-5 w-5 transition-all duration-150 ${
             isOpen ? "rotate-180" : ""
           }`}
         />
@@ -78,7 +78,7 @@ export default function Sidebar() {
           <h1 className="btn-ghost btn text-xl">
             ClientCl{" "}
             <span>
-              <IconSteam size={20} className="text-[#FF7F11]" />
+              <IconSteam size={20} className="text-error" />
             </span>{" "}
             ud
           </h1>

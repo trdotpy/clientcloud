@@ -25,8 +25,8 @@ const SidebarRoutes = [
     icon: <IconChartBar className="h-5 w-5" />,
   },
   {
-    path: "/dashboard/sales",
-    name: "Revenue",
+    path: "/dashboard/invoices",
+    name: "Invoices",
     icon: <IconDatabase className="h-5 w-5" />,
   },
   {

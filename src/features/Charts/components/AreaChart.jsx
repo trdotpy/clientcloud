@@ -24,42 +24,20 @@ Chart.register(
   Legend
 );
 
-export default function LineChart() {
+export default function AreaChart() {
   const labels = ["Aug", "Sept", "Oct", "Nov", "Dec", "Jan", "Feb", "Mar"];
 
   const data = {
     labels,
     datasets: [
       {
-        fill: false,
-        label: "Company A",
+        fill: true,
+        label: "Active Users",
         data: labels.map(() => {
           return Math.random() * 1000 + 30000;
         }),
-        backgroundColor: "rgba(54, 162, 235, 0.8)",
-        borderColor: "rgba(54, 162, 235, 0.8)",
-        cubicInterpolationMode: "monotone",
-        lineTension: 0.8,
-      },
-      {
-        fill: false,
-        label: "Company B",
-        data: labels.map(() => {
-          return Math.random() * 1000 + 25000;
-        }),
-        backgroundColor: "rgba(255, 99, 132, 0.8)",
-        borderColor: "rgba(255, 99, 132, 0.8)",
-        cubicInterpolationMode: "monotone",
-        lineTension: 0.8,
-      },
-      {
-        fill: false,
-        label: "Company C",
-        data: labels.map(() => {
-          return Math.random() * 1000 + 20000;
-        }),
-        backgroundColor: "rgba(255, 206, 86, 1)",
-        borderColor: "rgba(255, 206, 86, 1)",
+        backgroundColor: "rgba(200, 247, 197, 0.5)",
+        borderColor: "#49A078",
         cubicInterpolationMode: "monotone",
         lineTension: 0.8,
       },
@@ -77,7 +55,7 @@ export default function LineChart() {
 
   return (
     <>
-      <Card title={"Client Revenue"}>
+      <Card title={"Active Users"}>
         <Line data={data} options={options} />
       </Card>
     </>

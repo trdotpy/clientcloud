@@ -54,12 +54,12 @@ const appList = [
   },
 ];
 
-export default function Connections() {
+export default function Integrations() {
   return (
     <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
       {appList.map((app) => {
         return (
-          <div className="alert shadow-lg md:h-24 " key={app.id}>
+          <div className="alert bg-primary shadow-lg md:h-28" key={app.id}>
             <div>
               <span className={app.color}>{app.logo}</span>
               <div>

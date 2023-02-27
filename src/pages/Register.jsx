@@ -33,7 +33,7 @@ export default function Register() {
               <h1 className="btn-ghost btn text-3xl">
                 ClientCl{" "}
                 <span>
-                  <IconSteam size={28} className="text-[#FF7F11]" />
+                  <IconSteam size={28} className="text-error" />
                 </span>{" "}
                 ud
               </h1>
@@ -78,7 +78,7 @@ export default function Register() {
           </div>
           <div>
             <button
-              className="btn-primary btn w-full text-gray-100"
+              className="btn-secondary btn w-full text-gray-100"
               type="submit"
             >
               <IconLock className="mr-1 h-5 w-5" />

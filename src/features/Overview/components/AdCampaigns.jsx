@@ -7,16 +7,16 @@ export default function AdCampaigns() {
     <>
       <div className="overflow-x-auto">
         <Card title={"Campaign Data"}>
-          {campaignData.map((stat) => (
-            <table className="table w-full" key={stat.id}>
-              <thead>
-                <tr>
-                  <th className="normal-case">Platform</th>
-                  <th className="normal-case">Impressions</th>
-                  <th className="normal-case">Convert Rate</th>
-                </tr>
-              </thead>
-              <tbody>
+          <table className="table w-full">
+            <thead>
+              <tr>
+                <th className="normal-case">Platform</th>
+                <th className="normal-case">Impressions</th>
+                <th className="normal-case">Convert Rate</th>
+              </tr>
+            </thead>
+            {campaignData.map((stat) => (
+              <tbody key={stat.id}>
                 <tr>
                   <td className={`${stat.color}`}>{stat.icon}</td>
                   {/* <td>{stat.source}</td> */}
@@ -27,8 +27,8 @@ export default function AdCampaigns() {
                   </td>
                 </tr>
               </tbody>
-            </table>
-          ))}
+            ))}
+          </table>
         </Card>
       </div>
     </>

@@ -1,7 +1,7 @@
 import React from "react";
 import salesData from "../../data/salesData";
 
-export default function Sales() {
+export default function Contacts() {
   return (
     <div className="w-full overflow-x-auto">
       <table className="table w-full">

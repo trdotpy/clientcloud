@@ -1,23 +1,23 @@
-import React, { lazy, Suspense } from "react";
+import React  from "react";
 import { Routes, Route } from "react-router-dom";
-import Header from "../../containers/Header/Header";
 import Settings from "../../features/Account/Settings/Settings";
 import Charts from "../../features/Charts";
-import Connections from "../../features/Connections/Connections";
+import Connections from "../../features/Integrations/Integrations";
 import Overview from "../../features/Overview";
-import Sales from "../../features/Sales";
+import Invoices from "../../features/Invoices";
+import Navbar from "../../containers/Navbar/Navbar";
 
 export default function Views() {
   return (
     <main className="drawer-content flex flex-col">
-      <div className="container bg-base-200">
-        <Header />
+      <div className="container bg-primary">
+        <Navbar />
       </div>
-      <main className="container flex-1 overflow-y-auto bg-base-300">
+      <main className="container flex-1 overflow-y-auto bg-primary">
         <Routes>
           <Route path="/overview" element={<Overview />} />
           <Route path="/charts" element={<Charts />} />
-          <Route path="/sales" element={<Sales />} />
+          <Route path="/invoices" element={<Invoices />} />
           <Route path="/connections" element={<Connections />} />
           <Route path="/settings" element={<Settings />} />
         </Routes>

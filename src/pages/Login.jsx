@@ -30,7 +30,7 @@ export default function Login() {
               <h1 className="btn-ghost btn text-3xl">
                 ClientCl{" "}
                 <span>
-                  <IconSteam size={28} className="text-[#FF7F11]" />
+                  <IconSteam size={28} className="text-error" />
                 </span>{" "}
                 ud
               </h1>
@@ -81,18 +81,18 @@ export default function Login() {
             </div>
           </div>
           <div className="space-y-2">
-            <button className="btn-info btn w-full" type="submit">
+            <button className="btn-secondary btn w-full" type="submit">
               Sign In
             </button>
             <button
-              className="btn-primary btn w-full text-white"
+              className="btn-error btn w-full text-white"
               onClick={() => {
                 setEmail("demo@trdotpy.dev");
                 setPassword("hireme");
               }}
             >
               <IconFlame className="mr-1 h-6 w-6" />
-              Test Demo Account
+              Demo Account
             </button>
           </div>
         </form>

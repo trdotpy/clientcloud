@@ -1,44 +1,36 @@
 import React from "react";
-import { IconAlignLeft, IconSteam } from "@tabler/icons-react";
+import { IconSteam } from "@tabler/icons-react";
 import { Link } from "react-router-dom";
 
 export default function Navbar() {
   return (
-    <div className="navbar bg-base-100">
+    <div className="container navbar rounded bg-primary">
       <div className="navbar-start">
-        <div className="dropdown">
-          <label tabIndex={0} className="btn-ghost btn-circle btn">
-            <IconAlignLeft />
-          </label>
-          <ul
-            tabIndex={0}
-            className="dropdown-content menu rounded-box menu-compact mt-3 w-52 bg-base-100 p-2 shadow"
-          >
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/">Features</Link>
-            </li>
-            <li>
-              <Link to="/">About Us</Link>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div className="navbar-center">
-        <h1 className="btn-ghost btn text-2xl">
+        <h1 className="btn-ghost btn text-xl">
           ClientCl{" "}
           <span>
-            <IconSteam size={24} className="text-[#FF7F11]" />
+            <IconSteam size={24} className="text-error" />
           </span>{" "}
           ud
         </h1>
       </div>
+      <div className="navbar-center">
+        <ul className="flex gap-x-6 text-sm font-medium tracking-tight">
+          <li>Product</li>
+          <li>Pricing</li>
+          <li>Company</li>
+          <li>Contact</li>
+        </ul>
+      </div>
       <div className="navbar-end flex space-x-4">
         <Link to="/login">
-          <button className="btn-primary btn-sm btn text-gray-100 md:btn-md">
-            Log in
+          <button className="btn-outline btn-sm btn rounded normal-case text-accent">
+            Log In
+          </button>
+        </Link>
+        <Link to="/login">
+          <button className="btn-secondary btn-sm btn rounded normal-case text-base-100">
+            Try for Free
           </button>
         </Link>
       </div>
