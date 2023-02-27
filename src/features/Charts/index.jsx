@@ -6,19 +6,6 @@ import LineChart from "./components/LineChart";
 
 export default function Charts() {
   return (
-    // <div>
-    //   <div className="my-8 grid grid-cols-1 gap-y-4 gap-x-8 md:grid-cols-2">
-    //     <AreaChart />
-    //     <LineChart />
-    //     <div>
-    //       <BarChart />
-    //       <LineChart />
-    //     </div>
-    //     <div>
-    //       <DoughnutChart />
-    //     </div>
-    //   </div>
-    // </div>
     <div>
       <div className="my-8 grid grid-cols-1 gap-y-4">
         <AreaChart />
