@@ -3,7 +3,6 @@ import Welcome from "./components/Welcome";
 import Statistics from "./components/Statistics";
 import LineChart from "../Charts/components/AreaChart";
 import BarChart from "../Charts/components/BarChart";
-import AdCampaigns from "./components/AdCampaigns";
 
 export default function Overview() {
   return (
@@ -15,7 +14,6 @@ export default function Overview() {
           <LineChart />
           <BarChart />
         </div>
-        <AdCampaigns />
       </div>
     </>
   );

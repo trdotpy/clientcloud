@@ -1,6 +1,6 @@
 import React from "react";
 import { campaignData } from "../../../data/dashStats";
-import Card from "../../../layout/Cards/Card";
+import Card from "../../../UI/Cards/Card";
 
 export default function AdCampaigns() {
   return (

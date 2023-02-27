@@ -1,6 +1,6 @@
 import React from "react";
-import Sidebar from "../Sidebar/Sidebar";
-import Views from "./Views";
+import Sidebar from "../../UI/Sidebar";
+import Views from "./components/Views";
 
 export default function Dashboard() {
   return (

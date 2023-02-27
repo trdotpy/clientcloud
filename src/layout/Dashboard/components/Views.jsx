@@ -1,11 +1,11 @@
 import React  from "react";
 import { Routes, Route } from "react-router-dom";
-import Settings from "../../features/Settings";
-import Charts from "../../features/Charts";
-import Connections from "../../features/Integrations";
-import Overview from "../../features/Overview";
-import Invoices from "../../features/Invoices";
-import Navbar from "../Navbar/Navbar";
+import Settings from "../../../Features/Settings";
+import Charts from "../../../Features/Charts";
+import Connections from "../../../Features/Integrations";
+import Overview from "../../../Features/Overview";
+import Invoices from "../../../Features/Invoices";
+import Navbar from "../../Landing/components/Navbar";
 
 export default function Views() {
   return (

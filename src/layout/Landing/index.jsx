@@ -1,7 +1,7 @@
 import React from "react";
-import Footer from "../../layout/Footer/Footer";
 import Benefits from "./components/Benefits";
 import CTA from "./components/CTA";
+import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 
