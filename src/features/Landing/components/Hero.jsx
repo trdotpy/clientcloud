@@ -3,10 +3,11 @@ import { Link } from "react-router-dom";
 
 export default function Hero() {
   return (
-    <div className="hero min-h-screen bg-base-200">
+    <div className="hero min-h-screen bg-base-100">
       <img
         src="./src/assets/transactions.svg"
         className="rounded-lg opacity-10"
+        alt="transactions"
       />
       <div className="hero-content text-center">
         <div className="max-w-md">

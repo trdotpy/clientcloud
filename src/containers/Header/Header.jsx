@@ -3,15 +3,15 @@ import { IconSteam } from "@tabler/icons-react";
 
 export default function Header() {
   return (
-    <div className="navbar bg-base-300">
-      <div className="navbar-start">
-        <span className="btn-ghost btn hidden text-lg normal-case md:flex">
+    <header className="navbar bg-base-200">
+      <nav className="navbar-start">
+        <button className="btn-ghost btn hidden text-lg normal-case md:flex">
           Dashboard
-        </span>
-        <span className="btn-ghost btn md:hidden">
+        </button>
+        <button className="btn-ghost btn md:hidden">
           <IconSteam size={32} className="w-14" />
-        </span>
-      </div>
+        </button>
+      </nav>
       <div className="navbar-end flex-none gap-x-2">
         <input
           type="text"
@@ -21,7 +21,10 @@ export default function Header() {
         <div className="dropdown-end dropdown">
           <label tabIndex={0} className="btn-ghost btn-circle avatar btn">
             <div className="w-10 rounded-full">
-              <img src="https://res.cloudinary.com/drij60fru/image/upload/v1677040646/314397231_636674618202803_1672434101401302981_n_v9p2n2.jpg" />
+              <img
+                src="https://res.cloudinary.com/drij60fru/image/upload/v1677040646/314397231_636674618202803_1672434101401302981_n_v9p2n2.jpg"
+                alt="avatar"
+              />
             </div>
           </label>
           <ul
@@ -29,20 +32,20 @@ export default function Header() {
             className="dropdown-content menu rounded-box menu-compact mt-3 w-52 bg-base-100 p-2 shadow"
           >
             <li>
-              <a className="justify-between">
+              <span className="justify-between">
                 Profile
                 <span className="badge">New</span>
-              </a>
+              </span>
             </li>
             <li>
-              <a>Settings</a>
+              <span>Settings</span>
             </li>
             <li>
-              <a>Logout</a>
+              <span>Logout</span>
             </li>
           </ul>
         </div>
       </div>
-    </div>
+    </header>
   );
 }

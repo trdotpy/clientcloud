@@ -70,7 +70,7 @@ export default function Sidebar() {
   const location = useLocation();
 
   return (
-    <div className="drawer-side">
+    <nav className="drawer-side">
       <label htmlFor="left-sidebar-drawer" className="drawer-overlay"></label>
       <ul className="menu w-60 bg-base-100 text-base-content">
         {/* Brand */}
@@ -100,6 +100,6 @@ export default function Sidebar() {
           </li>
         ))}
       </ul>
-    </div>
+    </nav>
   );
 }

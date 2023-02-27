@@ -10,7 +10,7 @@ import Sales from "../../features/Sales";
 export default function Views() {
   return (
     <main className="drawer-content flex flex-col">
-      <div className="container bg-base-300">
+      <div className="container bg-base-200">
         <Header />
       </div>
       <main className="container flex-1 overflow-y-auto bg-base-300">

@@ -1,5 +1,4 @@
 import React from "react";
-import { dashStats } from "../../../data/dashStats";
 
 export default function Statistics() {
   return (

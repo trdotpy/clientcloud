@@ -5,7 +5,6 @@ import {
   IconBrandYoutube,
   IconCreditCard,
   IconDiscountCheck,
-  IconHeartHandshake,
   IconMail,
   IconRefreshDot,
   IconUsers,
