@@ -7,7 +7,7 @@ export const invoiceData = [
     title: "Marketing Manager",
     company: "Global Industries",
     location: "New York, USA",
-    date: "8/16/2022",
+    date: "8/16/22",
     file: <IconFileDownload />,
   },
   {
@@ -16,7 +16,7 @@ export const invoiceData = [
     title: "Software Engineer",
     company: "Tech Innovations",
     location: "San Francisco, USA",
-    date: "10/10/2022",
+    date: "10/10/22",
     file: <IconFileDownload />,
   },
   {
@@ -25,7 +25,7 @@ export const invoiceData = [
     title: "Sales Associate",
     company: "Ace Corporation",
     location: "Miami, USA",
-    date: "5/15/2022",
+    date: "5/15/22",
     file: <IconFileDownload />,
   },
   {
@@ -34,7 +34,7 @@ export const invoiceData = [
     title: "Product Designer",
     company: "Artisan Creations",
     location: "London, UK",
-    date: "12/1/2022",
+    date: "12/1/22",
     file: <IconFileDownload />,
   },
   {
@@ -43,7 +43,7 @@ export const invoiceData = [
     title: "HR Director",
     company: "Peak Performance",
     location: "Toronto, Canada",
-    date: "3/20/2022",
+    date: "3/20/22",
     file: <IconFileDownload />,
   },
   {
@@ -52,7 +52,7 @@ export const invoiceData = [
     title: "Project Manager",
     company: "Innovative Solutions",
     location: "Singapore",
-    date: "9/5/2022",
+    date: "9/5/22",
     file: <IconFileDownload />,
   },
   {
@@ -61,7 +61,7 @@ export const invoiceData = [
     title: "Operations Manager",
     company: "Strategic Ventures",
     location: "Seoul, South Korea",
-    date: "7/1/2022",
+    date: "7/1/22",
     file: <IconFileDownload />,
   },
   {
@@ -79,7 +79,7 @@ export const invoiceData = [
     title: "Marketing Coordinator",
     company: "Digital Dream",
     location: "Shanghai, China",
-    date: "6/15/2022",
+    date: "6/15/22",
     file: <IconFileDownload />,
   },
   {
@@ -88,7 +88,7 @@ export const invoiceData = [
     title: "IT Specialist",
     company: "TechWave",
     location: "Dubai, UAE",
-    date: "2/10/2022",
+    date: "2/10/22",
     file: <IconFileDownload />,
   },
 ];

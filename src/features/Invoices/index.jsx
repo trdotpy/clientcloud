@@ -8,8 +8,6 @@ export default function Invoices() {
         <thead>
           <tr>
             <th>Date</th>
-            <th>Name</th>
-            <th>Title</th>
             <th>Company</th>
             <th>Location</th>
             <th>File</th>
@@ -19,9 +17,7 @@ export default function Invoices() {
           {invoiceData.map((invoice) => {
             return (
               <tr key={invoice.id}>
-                <td>{invoice.date}</td>
-                <td>{invoice.name}</td>
-                <td>{invoice.title}</td>
+                <td className="">{invoice.date}</td>
                 <td>{invoice.company}</td>
                 <td>{invoice.location}</td>
                 <td>

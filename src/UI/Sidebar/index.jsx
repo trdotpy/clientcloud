@@ -11,10 +11,13 @@ function MenuItem({ path, name, icon, isActive }) {
         isActive ? "bg-base-200 font-semibold" : "font-normal"
       }`}
     >
-      {icon} {name}
+      <span>{icon}</span>
+      {/* Hide name labels on mobile */}
+      <p className="hidden sm:block">{name}</p>
+      {/* Active Bar */}
       {isActive && (
         <span
-          className="absolute inset-y-0 right-0 w-1 rounded-tr-md rounded-br-md bg-secondary"
+          className="absolute inset-y-0 right-0 w-1 rounded-sm bg-secondary"
           aria-hidden="true"
         ></span>
       )}
@@ -34,7 +37,7 @@ function DropdownMenu({ dropdown }) {
 
   return (
     <div className="flex-col">
-      {/* <div
+      <div
         className="flex w-full cursor-pointer justify-between"
         onClick={() => setIsOpen(!isOpen)}
       >
@@ -46,7 +49,7 @@ function DropdownMenu({ dropdown }) {
             isOpen ? "rotate-180" : ""
           }`}
         />
-      </div> */}
+      </div>
 
       {isOpen && (
         <ul className="menu menu-compact w-full">
@@ -70,20 +73,9 @@ export default function Sidebar() {
   const location = useLocation();
 
   return (
-    <nav className="drawer-side">
+    <nav className="drawer-side border-r">
       <label htmlFor="left-sidebar-drawer" className="drawer-overlay"></label>
-      <ul className="menu w-64 bg-base-100 text-base-content">
-        {/* Brand */}
-        <div className="mt-4 mb-4 flex items-center">
-          <h1 className="btn-ghost btn text-xl">
-            ClientCl{" "}
-            <span>
-              <IconSteam size={20} className="text-error" />
-            </span>{" "}
-            ud
-          </h1>
-        </div>
-
+      <ul className="menu text-sm md:w-48">
         {/* Menu items */}
         {SidebarRoutes.map(({ dropdown, path, name, icon }, index) => (
           <li key={index}>

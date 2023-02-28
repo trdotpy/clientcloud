@@ -3,7 +3,7 @@ import React from "react";
 
 export default function Statistics() {
   return (
-    <div className="stats bg-primary shadow">
+    <div className="stats h-28 bg-primary shadow">
       <div className="stat">
         <div className="stat-title font-medium tracking-tight">Total Likes</div>
         <div className="stat-value text-secondary">
@@ -12,7 +12,7 @@ export default function Statistics() {
         <div className="stat-desc">21% more than last month</div>
       </div>
 
-      <div className="stat">
+      <div className="stat hidden md:block">
         <div className="stat-figure text-error"></div>
         <div className="stat-title font-medium tracking-tight">Page Views</div>
         <div className="stat-value text-error">
@@ -22,10 +22,8 @@ export default function Statistics() {
         <div className="stat-desc">21% more than last month</div>
       </div>
 
-      <div className="stat">
-        <div className="stat-figure text-secondary">
-         
-        </div>
+      <div className="stat hidden md:block">
+        <div className="stat-figure text-secondary"></div>
         <div className="stat-title font-medium tracking-tight">
           Completed Tasks
         </div>

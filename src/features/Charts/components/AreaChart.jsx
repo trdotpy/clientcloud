@@ -54,10 +54,8 @@ export default function AreaChart() {
   };
 
   return (
-    <>
-      <Card title={"Active Users"}>
-        <Line data={data} options={options} />
-      </Card>
-    </>
+    <Card title={"Active Users"}>
+      <Line data={data} options={options} />
+    </Card>
   );
 }

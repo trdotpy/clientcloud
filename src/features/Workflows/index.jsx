@@ -1,7 +1,10 @@
-import React from 'react'
+import React from "react";
+import Projects from "./components/Projects";
 
 export default function Workflows() {
-	return (
-		<div>index</div>
-	)
+  return (
+    <div>
+      <Projects />
+    </div>
+  );
 }
