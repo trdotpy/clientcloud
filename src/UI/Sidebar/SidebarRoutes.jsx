@@ -3,14 +3,10 @@ import {
   IconChartBar,
   IconDatabase,
   IconFileInvoice,
-  IconHelp,
   IconLayoutDashboard,
-  IconLayoutKanban,
   IconLogout,
   IconSettings,
   IconShare,
-  IconUserCircle,
-  IconUsers,
 } from "@tabler/icons-react";
 
 const SidebarRoutes = [
@@ -38,41 +34,19 @@ const SidebarRoutes = [
     path: "/dashboard/workflows",
     name: "Workflows",
     icon: <IconApiApp className="h-5 w-5" />,
-    dropdown: [
-      {
-        path: "/dashboard/projects",
-        name: "Projects",
-        icon: <IconLayoutKanban className="h-5 w-5" />,
-      },
-      {
-        path: "/dashboard/teams",
-        name: "Teams",
-        icon: <IconUsers className="h-5 w-5" />,
-      },
-    ],
+  },
+
+  {
+    path: "/dashboard/billing",
+    name: "Billing",
+    icon: <IconFileInvoice className="h-5 w-5" />,
   },
   {
-    path: "/dashboard/account",
-    name: "Account",
-    icon: <IconUserCircle className="inline h-5 w-5" />,
-    dropdown: [
-      {
-        path: "/dashboard/billing",
-        name: "Billing",
-        icon: <IconFileInvoice className="h-5 w-5" />,
-      },
-      {
-        path: "/dashboard/settings",
-        name: "Settings",
-        icon: <IconSettings className="h-5 w-5" />,
-      },
-    ],
+    path: "/dashboard/settings",
+    name: "Settings",
+    icon: <IconSettings className="h-5 w-5" />,
   },
-  {
-    path: "/dashboard/support",
-    name: "Support",
-    icon: <IconHelp className="h-5 w-5" />,
-  },
+
   {
     path: "/",
     name: "Logout",

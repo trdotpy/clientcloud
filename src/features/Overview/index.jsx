@@ -3,6 +3,7 @@ import Welcome from "./components/Welcome";
 import Statistics from "./components/Statistics";
 import LineChart from "../Charts/components/AreaChart";
 import BarChart from "../Charts/components/BarChart";
+import Carousel from "./components/Carousel";
 
 export default function Overview() {
   return (
@@ -14,6 +15,7 @@ export default function Overview() {
           <LineChart />
           <BarChart />
         </div>
+        <Carousel />
       </div>
     </>
   );
