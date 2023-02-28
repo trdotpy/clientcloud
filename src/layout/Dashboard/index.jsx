@@ -1,13 +1,13 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 // import Settings from "../../Features/Settings";
-import Charts from "../../Features/Charts";
 import Connections from "../../Features/Integrations";
 import Overview from "../../Features/Overview";
 import Invoices from "../../Features/Invoices";
 import Workflows from "../../Features/Workflows";
 import Navbar from "./components/Navbar";
 import Sidebar from "../../UI/Sidebar";
+import Charts from "../../Features/Charts";
 
 export default function Dashboard() {
   return (
