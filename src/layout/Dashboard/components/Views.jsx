@@ -10,7 +10,7 @@ import Navbar from "./Navbar";
 export default function Views() {
   return (
     <main className="drawer-content flex flex-col">
-      <div className="container bg-primary">
+      <div className="bg-primary">
         <Navbar />
       </div>
       <main className="container flex-1 overflow-y-auto bg-primary">

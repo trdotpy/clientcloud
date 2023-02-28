@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 export default function Navbar() {
   return (
-    <header className="navbar bg-primary">
+    <header className="navbar bg-primary border-b">
       <nav className="navbar-start">
         {/* <button className="btn-ghost btn hidden text-lg normal-case md:flex">
           Dashboard

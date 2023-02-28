@@ -8,7 +8,7 @@ function MenuItem({ path, name, icon, isActive }) {
     <Link
       to={path}
       className={`flex items-center gap-x-3 ${
-        isActive ? "bg-base-200 font-medium" : "font-normal"
+        isActive ? "bg-base-200 font-semibold" : "font-normal"
       }`}
     >
       {icon} {name}
@@ -34,7 +34,7 @@ function DropdownMenu({ dropdown }) {
 
   return (
     <div className="flex-col">
-      <div
+      {/* <div
         className="flex w-full cursor-pointer justify-between"
         onClick={() => setIsOpen(!isOpen)}
       >
@@ -46,7 +46,7 @@ function DropdownMenu({ dropdown }) {
             isOpen ? "rotate-180" : ""
           }`}
         />
-      </div>
+      </div> */}
 
       {isOpen && (
         <ul className="menu menu-compact w-full">
@@ -72,7 +72,7 @@ export default function Sidebar() {
   return (
     <nav className="drawer-side">
       <label htmlFor="left-sidebar-drawer" className="drawer-overlay"></label>
-      <ul className="menu w-60 bg-base-100 text-base-content">
+      <ul className="menu w-64 bg-base-100 text-base-content">
         {/* Brand */}
         <div className="mt-4 mb-4 flex items-center">
           <h1 className="btn-ghost btn text-xl">

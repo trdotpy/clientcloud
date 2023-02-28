@@ -14,20 +14,7 @@ import Card from "../../../UI/Cards";
 Chart.register(Title, Tooltip, BarElement, CategoryScale, LinearScale, Legend);
 
 export default function BarChart() {
-  const labels = [
-    "January",
-    "February",
-    "March",
-    "April",
-    "May",
-    "June",
-    "July",
-    "August",
-    "September",
-    "October",
-    "November",
-    "December",
-  ];
+  const labels = ["Aug", "Sept", "Oct", "Nov", "Dec", "Jan", "Feb", "Mar"];
 
   const data = {
     labels,

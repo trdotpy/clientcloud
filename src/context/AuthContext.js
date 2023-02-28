@@ -25,14 +25,16 @@ export function UserAuthContextProvider({ children }) {
   }
 
   useEffect(() => {
-    const unsubscribe = onAuthStateChanged(auth, (currentuser) => {
-      console.log("Auth", currentuser);
-      setUser(currentuser);
-      localStorage.setItem("user", JSON.stringify(currentuser));
+    const unsubscribe = onAuthStateChanged(auth, (user) => {
+      console.log("Auth", user);
+      if (user) {
+        setUser(user);
+        localStorage.setItem("user", JSON.stringify(user));
+      } else {
+        setUser(null);
+        localStorage.removeItem("user");
+      }
     });
-
-    const userFromStorage = localStorage.getItem("user");
-    setUser(userFromStorage ? JSON.parse(userFromStorage) : null);
 
     return () => {
       unsubscribe();
