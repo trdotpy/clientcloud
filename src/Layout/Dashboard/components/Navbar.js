@@ -35,7 +35,7 @@ export default function Navbar() {
           <label tabIndex={0} className="btn-ghost btn-circle avatar btn">
             <div className="w-10 rounded-full">
               <img
-                src="https://res.cloudinary.com/drij60fru/image/upload/v1677040646/314397231_636674618202803_1672434101401302981_n_v9p2n2.jpg"
+                src="https://res.cloudinary.com/drij60fru/image/upload/v1677684647/egg-3442-e1f6463624338504cd021bf23aef8441_1x_vj31w0.jpg"
                 alt="avatar"
               />
             </div>
@@ -44,11 +44,6 @@ export default function Navbar() {
             tabIndex={0}
             className="dropdown-content menu rounded-box menu-compact mt-3 w-52 bg-base-100 p-2 shadow"
           >
-            <li>
-              <Link to="/dashboard/settings">
-                <span className="justify-between">Profile</span>
-              </Link>
-            </li>
             <li>
               <Link to="/dashboard/settings">
                 <span>Settings</span>
