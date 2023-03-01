@@ -1,7 +1,7 @@
 import React from "react";
-import LineChart from "./components/LineChart";
-import BarChart from "./components/BarChart";
-import PieChart from "./components/PieChart";
+import BarChart from "../Charts/BarChart";
+import LineChart from "../Charts/LineChart";
+import PieChart from "../Charts/PieChart";
 
 export default function Overview() {
   return (

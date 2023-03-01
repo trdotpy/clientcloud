@@ -1,6 +1,5 @@
 import React from "react";
 import { IconBrandGithub, IconBrandLinkedin } from "@tabler/icons-react";
-import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (

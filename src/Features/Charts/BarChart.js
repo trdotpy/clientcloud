@@ -1,7 +1,7 @@
 import React from "react";
 import Chart from "react-apexcharts";
-import ChartCard from "./ChartCard";
-import OverviewCard from "./OverviewCard";
+import ChartCard from "../../UI/Cards/ChartCard";
+import OverviewCard from "../Overview/components/OverviewCard";
 
 export default function BarChart() {
   const options = {
