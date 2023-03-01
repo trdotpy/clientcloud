@@ -47,7 +47,7 @@ export default function FAQ() {
               Brand new
             </p>
           </div>
-          <h2 className="mb-6 max-w-lg font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto">
+          <h2 className="mb-6 max-w-lg text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto">
             Frequently Asked Questions
           </h2>
           <p className="text-base text-gray-700 md:text-lg ">

@@ -1,27 +1,34 @@
 import React, { useState } from "react";
 import { IconLock, IconSteam } from "@tabler/icons-react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
+import toast, { Toaster } from "react-hot-toast";
 
 export default function Register() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
-  const navigate = useNavigate();
   const { signUp } = useAuth();
+
+  const notifySuccess = () => toast.success("Account created!");
+  const passErr = () => toast.error("Password must be at least 6 characters.");
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     setError("");
+
+    if (password.length < 6) {
+      setError("Password must be at least 6 characters.");
+      passErr();
+      return;
+    }
+
     try {
       await signUp(email, password);
-      // navigate("/");
+      notifySuccess();
     } catch (err) {
       setError(err.message);
     }
-    console.log(
-      `User signed up with email: ${email} and password: ${password}`
-    );
   };
 
   return (
@@ -81,6 +88,7 @@ export default function Register() {
               className="btn-secondary btn w-full text-gray-100"
               type="submit"
             >
+              <Toaster />
               <IconLock className="mr-1 h-5 w-5" />
               Register
             </button>

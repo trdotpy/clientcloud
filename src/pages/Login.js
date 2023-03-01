@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-import { IconFlame, IconSteam } from "@tabler/icons-react";
+import { IconLock, IconLockOpen, IconSteam } from "@tabler/icons-react";
 import { Link, useNavigate } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
+import toast, { Toaster } from "react-hot-toast";
 
 export default function Login() {
   const [email, setEmail] = useState("");
@@ -10,14 +11,18 @@ export default function Login() {
   const navigate = useNavigate();
   const { logIn } = useAuth();
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
+  const loginErr = () => toast.error("Invalid username or password.");
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
     setError("");
+
     try {
       await logIn(email, password);
       navigate("/dashboard/overview");
     } catch (err) {
       setError(err.message);
+      loginErr();
     }
   };
 
@@ -38,9 +43,10 @@ export default function Login() {
           </div>
         </div>
         <form className="mt-8 space-y-6" onSubmit={handleSubmit}>
-          {/* <input type="hidden" name="remember" value="true" /> */}
+          <input type="hidden" name="remember" value="true" />
           <div className="space-y-2 rounded-md shadow-sm">
             <div>
+              <label htmlFor="email-address"></label>
               <input
                 type="email"
                 placeholder="Email"
@@ -51,6 +57,7 @@ export default function Login() {
               />
             </div>
             <div>
+              <label htmlFor="password"></label>
               <input
                 type="password"
                 placeholder="Password"
@@ -82,6 +89,8 @@ export default function Login() {
           </div>
           <div className="space-y-2">
             <button className="btn-secondary btn w-full" type="submit">
+              <Toaster />
+              <IconLock className="mr-1 h-5 w-5" />
               Sign In
             </button>
             <button
@@ -91,7 +100,7 @@ export default function Login() {
                 setPassword("hireme");
               }}
             >
-              <IconFlame className="mr-1 h-6 w-6" />
+              <IconLockOpen className="mr-1 h-6 w-6" />
               Demo Account
             </button>
           </div>
