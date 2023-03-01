@@ -5,11 +5,14 @@ export default function Hero() {
     <section className="bg-base-100">
       <div className="mx-auto max-w-screen-xl px-4 py-32 lg:flex lg:h-screen lg:items-center">
         <div className="mx-auto max-w-3xl text-center">
-          <h1 className="text-2xl font-extrabold sm:text-4xl lg:text-6xl">
+          <h1 className="text-3xl font-extrabold sm:text-4xl lg:text-6xl">
             Understand Customers.
-            <strong className="font-extrabold text-secondary sm:block">
+            <strong className="hidden font-extrabold text-secondary sm:block">
               Increase Conversions.
             </strong>
+          </h1>
+          <h1 className="text-3xl font-extrabold text-secondary md:hidden">
+            Increase Conversions.
           </h1>
 
           <p className="mt-4 sm:text-lg sm:leading-relaxed">
