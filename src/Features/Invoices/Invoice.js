@@ -6,7 +6,7 @@ export default function Invoice() {
   return (
     <OverviewCard>
       <div className="container mx-auto p-2 sm:p-8">
-        <p className="text-sm font-medium text-neutral">Data</p>
+        <p className="text-sm font-medium text-gray-400">Data</p>
         <h4 className="text-xl font-bold text-secondary">Recent Invoices</h4>
         <div className="overflow-x-auto py-2">
           <table className="min-w-full text-xs">

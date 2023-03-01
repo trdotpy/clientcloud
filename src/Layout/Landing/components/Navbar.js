@@ -14,7 +14,8 @@ export default function Navbar() {
           ud
         </h1>
       </div>
-      <div className="navbar-center hidden md:block">
+			{/* Todo: Setup scrolling for nav links */}
+      <div className="navbar-center hidden">
         <ul className="flex gap-x-6 text-sm font-medium tracking-tight">
           <li className="cursor-pointer underline-offset-8 hover:underline">
             Home
@@ -29,12 +30,12 @@ export default function Navbar() {
       </div>
       <div className="navbar-end flex space-x-4">
         <Link to="/login">
-          <button className="btn-error btn-sm btn rounded normal-case text-primary">
+          <button className="btn-secondary btn-sm btn rounded normal-case text-primary">
             Log In
           </button>
         </Link>
         <Link to="/login">
-          <button className="btn-secondary btn-sm btn rounded normal-case text-primary">
+          <button className="btn-error btn-sm btn rounded normal-case text-primary">
             Try for Free
           </button>
         </Link>

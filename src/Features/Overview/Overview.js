@@ -12,10 +12,12 @@ export default function Overview() {
       <div className="grid grid-cols-1 gap-4">
         <Welcome />
         <Statistics />
-        <div className="grid grid-cols-1 gap-8">
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
           <RevenueBar />
           <PieChart />
-          <div className="md:col-span-2">
+          <Article />
+
+          <div className="md:col-span-1 lg:col-span-3">
             <ClientArea />
           </div>
         </div>

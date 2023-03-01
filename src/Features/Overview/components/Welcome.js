@@ -7,7 +7,7 @@ export default function Welcome() {
       <div>
         <IconInfoCircle className="h-6 w-6 flex-shrink-0 stroke-info" />
         <div>
-          <h3 className="font-bold">Welcome!</h3>
+          <h3 className="font-semibold">Welcome!</h3>
           <div className="text-xs">
             Use the sidebar to navigate between the different features of
             ClientCloud.

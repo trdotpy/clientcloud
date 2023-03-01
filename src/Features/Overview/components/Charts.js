@@ -9,7 +9,7 @@ import ClientArea from "../../Charts/ClientArea";
 export default function Charts() {
   return (
     <div className="space-y-8">
-      <div className="col-span-3 grid grid-cols-2 gap-4">
+      <div className="col-span-3 grid grid-cols-1 md:grid-cols-2 gap-4">
         <RegionPie />
         <TeamRange />
       </div>

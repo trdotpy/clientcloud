@@ -11,10 +11,9 @@ export default function Testimonials() {
         <div className="grid gap-y-10 sm:grid-cols-2 sm:gap-y-12 lg:grid-cols-3 lg:divide-x">
           <div className="flex flex-col items-center gap-4 sm:px-4 md:gap-6 lg:px-8">
             <div className="text-center text-sm text-gray-500">
-              "ClientCloud has been a game-changer for us. It's easy to use,
-              integrates seamlessly with our other tools, and has helped us keep
-              track of leads, follow-ups, and deals in a much more organized
-              way."
+              "ClientCloud has been a game-changer for us. It's easy to use, and
+              has helped us keep track of leads, follow-ups, and deals in a much
+              more organized way."
             </div>
             <div className="flex flex-col items-center gap-2 sm:flex-row md:gap-3">
               <div className="h-12 w-12 overflow-hidden rounded-full bg-gray-100 shadow-lg md:h-14 md:w-14">
@@ -27,7 +26,7 @@ export default function Testimonials() {
               </div>
 
               <div>
-                <div className="text-center text-sm font-bold text-indigo-500 sm:text-left md:text-base">
+                <div className="text-center text-sm font-bold text-secondary sm:text-left md:text-base">
                   John McCulling
                 </div>
                 <p className="text-center text-sm text-gray-500 sm:text-left md:text-sm">
@@ -55,7 +54,7 @@ export default function Testimonials() {
               </div>
 
               <div>
-                <div className="text-center text-sm font-bold text-indigo-500 sm:text-left md:text-base">
+                <div className="text-center text-sm font-bold text-secondary sm:text-left md:text-base">
                   Kate Johnson
                 </div>
                 <p className="text-center text-sm text-gray-500 sm:text-left md:text-sm">
@@ -83,7 +82,7 @@ export default function Testimonials() {
               </div>
 
               <div>
-                <div className="text-center text-sm font-bold text-indigo-500 sm:text-left md:text-base">
+                <div className="text-center text-sm font-bold text-secondary sm:text-left md:text-base">
                   Greg Jackson
                 </div>
                 <p className="text-center text-sm text-gray-500 sm:text-left md:text-sm">
