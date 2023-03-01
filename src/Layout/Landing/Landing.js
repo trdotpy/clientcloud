@@ -6,9 +6,9 @@ import Hero from "./components/Hero";
 export default function Landing() {
   return (
     <div className="bg-base-100">
-      <Hero />
-      <Content />
-      <Benefits />
+      <Hero id="hero" />
+      <Content id="content" />
+      <Benefits id="benefits" />
     </div>
   );
 }

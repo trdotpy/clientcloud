@@ -1,6 +1,6 @@
 import { IconBolt, IconThumbUp, IconTrendingUp } from "@tabler/icons-react";
 import React from "react";
-import OverviewCard from "./OverviewCard";
+import OverviewCard from "../../../UI/Cards/OverviewCard";
 
 export default function Statistics() {
   return (

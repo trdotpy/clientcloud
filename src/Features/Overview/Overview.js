@@ -19,7 +19,7 @@ export default function Overview() {
             <ClientArea />
           </div>
         </div>
-        <Article />
+        {/* <Article /> */}
       </div>
     </div>
   );

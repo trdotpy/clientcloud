@@ -1,7 +1,8 @@
 import React from "react";
 import Chart from "react-apexcharts";
 import ChartCard from "../../UI/Cards/ChartCard";
-import OverviewCard from "../Overview/components/OverviewCard";
+import OverviewCard from "../../UI/Cards/OverviewCard";
+
 
 export default function TeamRange() {
   const options = {

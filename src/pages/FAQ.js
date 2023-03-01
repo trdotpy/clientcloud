@@ -39,22 +39,22 @@ export default function FAQ() {
     );
   };
   return (
-    <div class="mx-auto px-4 py-16 sm:max-w-xl md:max-w-full md:px-24 lg:max-w-screen-xl lg:px-8 lg:py-20 ">
-      <div class="max-w-xl sm:mx-auto lg:max-w-2xl">
-        <div class="mb-10 max-w-xl sm:text-center md:mx-auto md:mb-12 lg:max-w-2xl">
+    <div className="mx-auto px-4 py-16 sm:max-w-xl md:max-w-full md:px-24 lg:max-w-screen-xl lg:px-8 lg:py-20 ">
+      <div className="max-w-xl sm:mx-auto lg:max-w-2xl">
+        <div className="mb-10 max-w-xl sm:text-center md:mx-auto md:mb-12 lg:max-w-2xl">
           <div>
-            <p class="bg-teal-accent-400 mb-4 inline-block rounded-full px-3 py-px text-xs font-semibold uppercase tracking-wider text-teal-900">
+            <p className="bg-teal-accent-400 mb-4 inline-block rounded-full px-3 py-px text-xs font-semibold uppercase tracking-wider text-teal-900">
               Brand new
             </p>
           </div>
-          <h2 class="mb-6 max-w-lg font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto">
+          <h2 className="mb-6 max-w-lg font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto">
             Frequently Asked Questions
           </h2>
-          <p class="text-base text-gray-700 md:text-lg ">
+          <p className="text-base text-gray-700 md:text-lg ">
             Your questions, answered.
           </p>
         </div>
-        <div class="space-y-4">
+        <div className="space-y-4">
           <Item title="How can?"></Item>
           <Item title="What is?">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora

@@ -1,8 +1,7 @@
 import React from "react";
-import OverviewCard from "../../UI/Cards/OverviewCard";
-import { invoiceData } from "./invoiceData";
+import OverviewCard from "../../../UI/Cards/OverviewCard";
 
-export default function Invoice() {
+export default function Customers() {
   return (
     <OverviewCard>
       <div className="container mx-auto p-2 sm:p-8">

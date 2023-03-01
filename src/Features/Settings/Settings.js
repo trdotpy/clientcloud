@@ -1,5 +1,5 @@
 import React from "react";
-import OverviewCard from "../Overview/components/OverviewCard";
+import OverviewCard from "../../UI/Cards/OverviewCard";
 
 export default function Settings() {
   return (

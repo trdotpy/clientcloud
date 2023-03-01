@@ -8,7 +8,6 @@ import {
   IconBrandTwitter,
   IconBrandWordpress,
 } from "@tabler/icons-react";
-import OverviewCard from "../Overview/components/OverviewCard";
 
 const appList = [
   {

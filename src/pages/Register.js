@@ -8,14 +8,14 @@ export default function Register() {
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
   const navigate = useNavigate();
-  const { register } = useAuth();
+  const { signUp } = useAuth();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     setError("");
     try {
-      await register(email, password);
-      navigate("/");
+      await signUp(email, password);
+      // navigate("/");
     } catch (err) {
       setError(err.message);
     }

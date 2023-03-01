@@ -1,8 +1,11 @@
 import React from "react";
 import { IconSteam } from "@tabler/icons-react";
 import { Link } from "react-router-dom";
+import { useAuth } from "../../../context/AuthContext";
 
 export default function Navbar() {
+  const { user, logOut } = useAuth();
+
   return (
     <nav className="navbar border-b bg-primary">
       <div className="navbar-start items-center">
@@ -51,7 +54,7 @@ export default function Navbar() {
             </li>
             <li>
               <Link to="/">
-                <span>Logout</span>
+                <button onClick={logOut}>Logout</button>
               </Link>
             </li>
           </ul>

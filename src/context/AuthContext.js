@@ -13,15 +13,33 @@ export function UserAuthContextProvider({ children }) {
   const [user, setUser] = useState(JSON.parse(localStorage.getItem("user")));
 
   function logIn(email, password) {
-    return signInWithEmailAndPassword(auth, email, password);
+    signInWithEmailAndPassword(auth, email, password)
+      .then((userCredential) => {
+        const user = userCredential.user;
+      })
+      .catch((err) => {
+        console.log(err);
+      });
   }
 
   function signUp(email, password) {
-    return createUserWithEmailAndPassword(auth, email, password);
+    createUserWithEmailAndPassword(auth, email, password)
+      .then((userCredential) => {
+        const user = userCredential.user;
+      })
+      .catch((err) => {
+        console.log(err);
+      });
   }
 
   function logOut() {
-    return signOut(auth);
+    signOut(auth)
+      .then(() => {
+        console.log("User signed out");
+      })
+      .catch((err) => {
+        console.log(err);
+      });
   }
 
   useEffect(() => {
