@@ -35,18 +35,16 @@ const SidebarRoutes = [
     name: "Workflows",
     icon: <IconApiApp className="h-6 w-6" />,
   },
-
-  {
-    path: "/dashboard/billing",
-    name: "Billing",
-    icon: <IconFileInvoice className="h-6 w-6" />,
-  },
+  // {
+  //   path: "/dashboard/billing",
+  //   name: "Billing",
+  //   icon: <IconFileInvoice className="h-6 w-6" />,
+  // },
   {
     path: "/dashboard/settings",
     name: "Settings",
     icon: <IconSettings className="h-6 w-6" />,
   },
-
   {
     path: "/",
     name: "Logout",

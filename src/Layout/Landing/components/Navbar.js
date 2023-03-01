@@ -16,10 +16,15 @@ export default function Navbar() {
       </div>
       <div className="navbar-center hidden md:block">
         <ul className="flex gap-x-6 text-sm font-medium tracking-tight">
-          <li>Product</li>
-          <li>Pricing</li>
-          <li>Company</li>
-          <li>Contact</li>
+          <li className="cursor-pointer underline-offset-8 hover:underline">
+            Home
+          </li>
+          <li className="cursor-pointer underline-offset-8 hover:underline">
+            Features
+          </li>
+          <li className="cursor-pointer underline-offset-8 hover:underline">
+            Benefits
+          </li>
         </ul>
       </div>
       <div className="navbar-end flex space-x-4">

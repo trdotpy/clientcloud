@@ -67,14 +67,11 @@ export default function Integrations() {
     <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
       {appList.map((app) => {
         return (
-          <div
-            className="alert bg-primary text-black shadow-lg md:h-28"
-            key={app.id}
-          >
+          <div className="alert bg-primary shadow-lg md:h-28" key={app.id}>
             <div>
               <span className={app.color}>{app.logo}</span>
               <div>
-                <h3 className="font-bold">{app.name}</h3>
+                <h3 className="font-medium">{app.name}</h3>
                 <div className="text-xs">{app.desc}</div>
               </div>
             </div>

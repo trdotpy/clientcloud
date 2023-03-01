@@ -3,7 +3,7 @@ import Chart from "react-apexcharts";
 import ChartCard from "../../UI/Cards/ChartCard";
 import OverviewCard from "../Overview/components/OverviewCard";
 
-export default function LineChart() {
+export default function AcquisitionLine() {
   const options = {
     legend: {
       show: false,
@@ -68,18 +68,18 @@ export default function LineChart() {
     {
       name: "Revenue",
       data: [50, 64, 48, 66, 49, 68],
-      color: "#4318FF",
+      color: "#63B4D1",
     },
     {
       name: "Profit",
       data: [30, 40, 24, 46, 20, 46],
-      color: "#6AD2FF",
+      color: "#EA526F",
     },
   ];
 
   return (
     <OverviewCard>
-      <ChartCard title="Sales" subtitle="Monthly">
+      <ChartCard title="Annual" subtitle="Acquisitions">
         <Chart
           options={options}
           series={series}

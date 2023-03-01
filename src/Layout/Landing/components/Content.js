@@ -2,9 +2,9 @@ import React from "react";
 
 export default function Content() {
   return (
-    <div className="mx-auto px-4 py-16 sm:max-w-xl md:max-w-full md:px-24 lg:max-w-screen-xl lg:px-8 lg:py-20 min-h-screen">
+    <div className="mx-auto min-h-screen px-4 py-16 sm:max-w-xl md:max-w-full md:px-24 lg:max-w-screen-xl lg:px-8 lg:py-20">
       <div className="mb-10 max-w-xl text-center md:mx-auto md:mb-12 lg:max-w-2xl">
-        <h2 className="mb-6 max-w-lg font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto">
+        <h2 className="mb-6 max-w-lg font-sans text-3xl font-bold leading-none tracking-tight sm:text-4xl md:mx-auto lg:text-5xl">
           Cutting-Edge Features
         </h2>
         <p className="text-base md:text-lg">

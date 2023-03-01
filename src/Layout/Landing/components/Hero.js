@@ -4,8 +4,8 @@ export default function Hero() {
   return (
     <section className="bg-base-100">
       <div className="mx-auto max-w-screen-xl px-4 py-32 lg:flex lg:h-screen lg:items-center">
-        <div className="mx-auto max-w-xl text-center">
-          <h1 className="text-3xl font-extrabold sm:text-5xl">
+        <div className="mx-auto max-w-3xl text-center">
+          <h1 className="text-2xl font-extrabold sm:text-4xl lg:text-6xl">
             Understand Customers.
             <strong className="font-extrabold text-secondary sm:block">
               Increase Conversions.

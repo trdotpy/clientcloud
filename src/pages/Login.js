@@ -81,9 +81,9 @@ export default function Login() {
             </div>
           </div>
           <div className="space-y-2">
-            <button className="btn-secondary btn w-full" type="submit">
+            {/* <button className="btn-secondary btn w-full" type="submit">
               Sign In
-            </button>
+            </button> */}
             <button
               className="btn-error btn w-full text-white"
               onClick={() => {

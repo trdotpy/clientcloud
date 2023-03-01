@@ -11,8 +11,8 @@ export default function Benefits() {
     <div class="min-h-screen py-6 sm:py-8 lg:py-12">
       <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
         <div className="mb-10 max-w-xl text-center md:mx-auto md:mb-12 lg:max-w-2xl">
-          <h2 className="mb-6 max-w-lg font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto">
-            The ClientCloud Advantage
+          <h2 className="mb-6 max-w-lg font-sans text-3xl font-bold leading-none tracking-tight sm:text-4xl md:mx-auto lg:text-5xl">
+            Our Advantage
           </h2>
           <p className="text-base md:text-lg">
             Say goodbye to the chaos of managing customer data across multiple

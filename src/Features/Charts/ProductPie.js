@@ -3,10 +3,10 @@ import Chart from "react-apexcharts";
 import ChartCard from "../../UI/Cards/ChartCard";
 import OverviewCard from "../Overview/components/OverviewCard";
 
-export default function PieChart() {
+export default function ProductPie() {
   const options = {
-    labels: ["Your files", "System", "Empty"],
-    colors: ["#4318FF", "#6AD2FF", "#EFF4FB"],
+    labels: ["B2B", "DTC", "Other"],
+    colors: ["#6564DB", "#EA526F", "#E9ECF5"],
     chart: {
       width: "50px",
     },
@@ -35,7 +35,7 @@ export default function PieChart() {
       },
     },
     fill: {
-      colors: ["#4318FF", "#6AD2FF", "#EFF4FB"],
+      colors: ["#6564DB", "#EA526F", "#E9ECF5"],
     },
     tooltip: {
       enabled: true,
@@ -48,10 +48,10 @@ export default function PieChart() {
     },
   };
 
-  const series = [63, 25, 12];
+  const series = [80000, 50000, 21000];
   return (
     <OverviewCard>
-      <ChartCard title="Customers" subtitle="Regional">
+      <ChartCard title="Product" subtitle="Sales">
         <Chart
           options={options}
           series={series}

@@ -3,7 +3,7 @@ import Chart from "react-apexcharts";
 import ChartCard from "../../UI/Cards/ChartCard";
 import OverviewCard from "../Overview/components/OverviewCard";
 
-export default function BarChart() {
+export default function RevenueBar() {
   const options = {
     chart: {
       stacked: false,
@@ -76,12 +76,12 @@ export default function BarChart() {
     },
     fill: {
       type: "solid",
-      colors: ["#5E37FF", "#6AD2FF", "#E1E9F8"],
+      colors: ["#63B4D1", "#EA526F", "#E1E9F8"],
     },
     legend: {
       show: false,
     },
-    colors: ["#5E37FF", "#6AD2FF", "#E1E9F8"],
+    colors: ["#63B4D1", "#EA526F", "#E1E9F8"],
     dataLabels: {
       enabled: false,
     },
@@ -97,12 +97,12 @@ export default function BarChart() {
     {
       name: "PRODUCT A",
       data: [400, 370, 330, 390, 320, 350, 360, 320, 380],
-      color: "#6AD2Fa",
+      color: "#EA526F",
     },
     {
       name: "PRODUCT B",
       data: [400, 370, 330, 390, 320, 350, 360, 320, 380],
-      color: "#4318FF",
+      color: "#63B4D1",
     },
     {
       name: "PRODUCT C",
@@ -112,7 +112,7 @@ export default function BarChart() {
   ];
   return (
     <OverviewCard>
-      <ChartCard title="Revenue" subtitle="Yearly">
+      <ChartCard title="Annual" subtitle="Revenue">
         <Chart
           options={options}
           series={series}

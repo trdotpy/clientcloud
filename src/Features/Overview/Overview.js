@@ -1,21 +1,26 @@
 import React from "react";
-import BarChart from "../Charts/BarChart";
-import LineChart from "../Charts/LineChart";
-import PieChart from "../Charts/PieChart";
+import RevenueBar from "../Charts/RevenueBar";
+import PieChart from "../Charts/RegionPie";
+import Article from "./components/Article";
+import Statistics from "./components/Statistics";
+import Welcome from "./components/Welcome";
+import ClientArea from "../Charts/ClientArea";
 
 export default function Overview() {
   return (
-    <>
-      <div>
-        <div className="grid grid-cols-1 gap-4">
-          <BarChart />
+    <div>
+      <div className="grid grid-cols-1 gap-4">
+        <Welcome />
+        <Statistics />
+        <div className="grid grid-cols-1 gap-8">
+          <RevenueBar />
           <PieChart />
           <div className="md:col-span-2">
-            <LineChart />
+            <ClientArea />
           </div>
         </div>
-        <div className="col-span-2"></div>
+        <Article />
       </div>
-    </>
+    </div>
   );
 }
