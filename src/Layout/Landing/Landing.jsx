@@ -1,18 +1,14 @@
 import React from "react";
 import Benefits from "./components/Benefits";
-import CTA from "./components/CTA";
-import Footer from "./components/Footer";
+import Content from "./components/Content";
 import Hero from "./components/Hero";
-import Navbar from "./components/Navbar";
 
 export default function Landing() {
   return (
-    <div className="bg-primary">
-      <Navbar />
+    <div className="bg-base-100">
       <Hero />
+      <Content />
       <Benefits />
-      <CTA />
-      <Footer />
     </div>
   );
 }

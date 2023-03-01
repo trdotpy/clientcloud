@@ -2,45 +2,54 @@ import React from "react";
 
 export default function Settings() {
   return (
-    <div className="card bg-primary shadow-lg lg:card-side">
-      <div className="card-body">
-        <h2 className="card-title">Account Settings</h2>
-        <div className="divider"></div>
-
-        <div className="grid grid-cols-1 gap-x-6 md:grid-cols-2">
-          <div className="form-control w-full max-w-xs">
-            <label className="label">
-              <span className="label-text text-xs font-medium">Name</span>
+    <form>
+      <fieldset className="grid grid-cols-4 gap-6 rounded-md border-2 p-6 shadow-sm">
+        <div className="card col-span-full space-y-2 lg:col-span-1">
+          <p className="card-title font-medium">Profile</p>
+          <p className="text-xs">Change your settings here.</p>
+        </div>
+        <div className="col-span-full grid grid-cols-6 gap-4 lg:col-span-3">
+          <div className="col-span-full sm:col-span-3">
+            <label for="username" className="text-sm">
+              Email
             </label>
             <input
-              type="text"
-              placeholder="Name"
-              className="input-bordered input w-full max-w-xs bg-primary"
-            />
-          </div>
-          <div className="form-control w-full max-w-xs">
-            <label className="label">
-              <span className="label-text text-xs font-medium">
-                Email Address
-              </span>
-            </label>
-            <input
+              id="username"
               type="text"
               placeholder="Email"
-              className="input-bordered input w-full max-w-xs bg-primary"
+              className="w-full rounded-md focus:ring focus:ring-violet-400 focus:ring-opacity-75 dark:border-gray-700 dark:text-gray-900"
             />
           </div>
+          <div className="col-span-full sm:col-span-3">
+            <label for="website" className="text-sm">
+              Website
+            </label>
+            <input
+              id="website"
+              type="text"
+              placeholder="https://"
+              className="w-full rounded-md focus:ring focus:ring-violet-400 focus:ring-opacity-75 dark:border-gray-700 dark:text-gray-900"
+            />
+          </div>
+          <div className="col-span-full">
+            <label for="bio" className="text-sm">
+              About
+            </label>
+            <textarea
+              id="bio"
+              placeholder=""
+              className="w-full rounded-md focus:ring focus:ring-violet-400 focus:ring-opacity-75 dark:border-gray-700 dark:text-gray-900"
+            ></textarea>
+          </div>
+          <div className="col-span-full">
+            <div className="flex items-center justify-end space-x-2">
+              <button type="submit" className="btn-secondary btn-md btn">
+                Save Settings
+              </button>
+            </div>
+          </div>
         </div>
-
-        <div className="card-actions mt-8 grid grid-cols-2 justify-end">
-          <button className="btn-secondary btn normal-case text-white">
-            Save Changes
-          </button>
-          <button className="btn-error btn normal-case text-white">
-            Reset Password
-          </button>
-        </div>
-      </div>
-    </div>
+      </fieldset>
+    </form>
   );
 }

@@ -1,0 +1,9 @@
+import React from "react";
+
+export default function OverviewCard({ children }) {
+  return (
+    <div className="z-5 shadow-3xl shadow-shadow-500 dark:!bg-navy-800 relative flex flex-col rounded-[20px] bg-white bg-clip-border dark:text-white dark:shadow-none">
+      {children}
+    </div>
+  );
+}

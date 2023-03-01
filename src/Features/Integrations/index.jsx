@@ -8,6 +8,7 @@ import {
   IconBrandTwitter,
   IconBrandWordpress,
 } from "@tabler/icons-react";
+import OverviewCard from "../Overview/components/OverviewCard";
 
 const appList = [
   {
@@ -66,7 +67,10 @@ export default function Integrations() {
     <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
       {appList.map((app) => {
         return (
-          <div className="alert bg-primary shadow-lg md:h-28" key={app.id}>
+          <div
+            className="alert bg-primary text-black shadow-lg md:h-28"
+            key={app.id}
+          >
             <div>
               <span className={app.color}>{app.logo}</span>
               <div>

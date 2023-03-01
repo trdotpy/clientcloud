@@ -1,38 +1,29 @@
-import { IconSteam } from "@tabler/icons-react";
 import React from "react";
+import { IconBrandGithub, IconBrandLinkedin } from "@tabler/icons-react";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
-    <footer className="footer bg-base-100 p-10 text-base-content">
-      <div>
-        <h1 className="btn-ghost btn text-xl">
-          ClientCl{" "}
-          <span>
-            <IconSteam size={24} className="text-error" />
-          </span>{" "}
-          ud
-        </h1>
+    <div className="mx-auto px-4 pt-16 sm:max-w-xl md:max-w-full md:px-24 lg:max-w-screen-xl lg:px-8">
+      <div className="flex flex-col justify-between border-t pt-5 pb-10 sm:flex-row">
+        <p className="text-xs">
+          © Copyright 2023 ClientCloud Inc. All rights reserved.
+        </p>
+        <div className="mt-4 flex items-center justify-center space-x-4 sm:mt-0 ">
+          <a
+            href="https://github.com/trdotpy"
+            className="text-gray-400 transition-colors duration-300 hover:text-error"
+          >
+            <IconBrandGithub />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/trdotpy/"
+            className="text-gray-400 transition-colors duration-300 hover:text-error"
+          >
+            <IconBrandLinkedin />
+          </a>
+        </div>
       </div>
-      <div>
-        <p className="footer-title">Services</p>
-        <span className="link-hover link">Branding</span>
-        <span className="link-hover link">Design</span>
-        <span className="link-hover link">Marketing</span>
-        <span className="link-hover link">Advertisement</span>
-      </div>
-      <div>
-        <p className="footer-title">Company</p>
-        <span className="link-hover link">About us</span>
-        <span className="link-hover link">Contact</span>
-        <span className="link-hover link">Jobs</span>
-        <span className="link-hover link">Press kit</span>
-      </div>
-      <div>
-        <p className="footer-title">Legal</p>
-        <span className="link-hover link">Terms of use</span>
-        <span className="link-hover link">Privacy policy</span>
-        <span className="link-hover link">Cookie policy</span>
-      </div>
-    </footer>
+    </div>
   );
 }

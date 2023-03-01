@@ -9,6 +9,7 @@ export const invoiceData = [
     location: "New York, USA",
     date: "8/16/22",
     file: <IconFileDownload />,
+    status: "Paid",
   },
   {
     id: 2,
@@ -18,6 +19,7 @@ export const invoiceData = [
     location: "San Francisco, USA",
     date: "10/10/22",
     file: <IconFileDownload />,
+    status: "Pending",
   },
   {
     id: 3,
@@ -27,6 +29,7 @@ export const invoiceData = [
     location: "Miami, USA",
     date: "5/15/22",
     file: <IconFileDownload />,
+    status: "Paid",
   },
   {
     id: 4,
@@ -36,6 +39,7 @@ export const invoiceData = [
     location: "London, UK",
     date: "12/1/22",
     file: <IconFileDownload />,
+    status: "Pending",
   },
   {
     id: 5,
@@ -45,6 +49,7 @@ export const invoiceData = [
     location: "Toronto, Canada",
     date: "3/20/22",
     file: <IconFileDownload />,
+    status: "Pending",
   },
   {
     id: 6,
@@ -54,6 +59,7 @@ export const invoiceData = [
     location: "Singapore",
     date: "9/5/22",
     file: <IconFileDownload />,
+    status: "Pending",
   },
   {
     id: 7,
@@ -63,6 +69,7 @@ export const invoiceData = [
     location: "Seoul, South Korea",
     date: "7/1/22",
     file: <IconFileDownload />,
+    status: "Pending",
   },
   {
     id: 8,
@@ -72,6 +79,7 @@ export const invoiceData = [
     location: "Melbourne, Australia",
     date: "11/30/2022",
     file: <IconFileDownload />,
+    status: "Pending",
   },
   {
     id: 9,
@@ -81,6 +89,7 @@ export const invoiceData = [
     location: "Shanghai, China",
     date: "6/15/22",
     file: <IconFileDownload />,
+    status: "Paid",
   },
   {
     id: 10,
@@ -90,5 +99,6 @@ export const invoiceData = [
     location: "Dubai, UAE",
     date: "2/10/22",
     file: <IconFileDownload />,
+    status: "Paid",
   },
 ];
