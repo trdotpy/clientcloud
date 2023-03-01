@@ -28,10 +28,10 @@ export default function Projects() {
         </div>
 
         <div className="card-actions items-center justify-end">
-          <span className="text-content badge badge-lg rounded bg-secondary text-xs">
+          <span className="text-content badge badge-lg rounded bg-secondary text-xs text-primary">
             In Progress
           </span>
-          <span className="text-content badge badge-lg rounded bg-secondary text-xs">
+          <span className="text-content badge badge-lg rounded bg-secondary text-xs text-primary">
             Testing
           </span>
           <GroupAvatars />
