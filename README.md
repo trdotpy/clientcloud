@@ -2,7 +2,7 @@
 
 # ClientCloud CRM
 
-ClientCloud is a SaaS product fit for any company looking for their next CRM.
+ClientCloud is a SaaS product for companies to manage relationships with their customers and track key data insights.
 
 ### <a href="https://clientcloud.vercel.app/">Demo</a>
 
