@@ -14,7 +14,7 @@ export default function Benefits() {
           <h2 className="mb-6 max-w-lg text-3xl font-bold leading-none tracking-tight sm:text-4xl md:mx-auto lg:text-5xl">
             Our Advantage
           </h2>
-          <p className="text-base md:text-lg">
+          <p className="text-base text-gray-500 md:text-lg">
             Say goodbye to the chaos of managing customer data across multiple
             platforms. With CloudConnect, you can manage your entire customer
             lifecycle from one centralized location.
@@ -23,7 +23,7 @@ export default function Benefits() {
 
         <div className="grid gap-8 sm:grid-cols-2 md:gap-12 xl:grid-cols-3 xl:gap-16">
           <div className="flex gap-4 md:gap-6">
-            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-secondary text-primary shadow-lg md:h-14 md:w-14 md:rounded-xl">
+            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-orange-400 text-primary shadow-lg md:h-14 md:w-14 md:rounded-xl">
               <IconRocket />
             </div>
 
@@ -38,12 +38,14 @@ export default function Benefits() {
           </div>
 
           <div className="flex gap-4 md:gap-6">
-            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-secondary text-primary shadow-lg md:h-14 md:w-14 md:rounded-xl">
+            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-violet-500 text-primary shadow-lg md:h-14 md:w-14 md:rounded-xl">
               <IconLock />
             </div>
 
             <div>
-              <h3 className="mb-2 text-lg font-semibold md:text-xl">Security</h3>
+              <h3 className="mb-2 text-lg font-semibold md:text-xl">
+                Security
+              </h3>
               <p className="mb-2 text-gray-500">
                 We understand the importance of keeping your data safe and
                 secure. That's why we use the latest security protocols to
@@ -54,7 +56,7 @@ export default function Benefits() {
           </div>
 
           <div className="flex gap-4 md:gap-6">
-            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-secondary text-primary shadow-lg md:h-14 md:w-14 md:rounded-xl">
+            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-sky-500 text-primary shadow-lg md:h-14 md:w-14 md:rounded-xl">
               <IconCloud />
             </div>
 
@@ -70,7 +72,7 @@ export default function Benefits() {
           </div>
 
           <div className="flex gap-4 md:gap-6">
-            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-secondary text-primary shadow-lg md:h-14 md:w-14 md:rounded-xl">
+            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-lime-500 text-primary shadow-lg md:h-14 md:w-14 md:rounded-xl">
               <IconHeadset />
             </div>
 

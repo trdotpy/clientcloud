@@ -34,7 +34,7 @@ export default function Content() {
         </div>
         <div className="flex flex-col justify-center">
           <div className="mb-4 border-b pb-4">
-            <h6 className="mb-2 font-semibold leading-5">
+            <h6 className="mb-2 text-xl font-semibold leading-5">
               Intuitive Data Visualization
             </h6>
             <p className="text-sm">
@@ -47,7 +47,7 @@ export default function Content() {
             </p>
           </div>
           <div className="mb-4 border-b pb-4">
-            <h6 className="mb-2 font-semibold leading-5">
+            <h6 className="mb-2 text-xl font-semibold leading-5">
               Invoicing and Payment Management
             </h6>
             <p className="text-sm">
@@ -57,7 +57,7 @@ export default function Content() {
             </p>
           </div>
           <div>
-            <h6 className="mb-2 font-semibold leading-5">
+            <h6 className="mb-2 text-xl font-semibold leading-5">
               Integrated Project Workflow Tracking
             </h6>
             <p className="text-sm">
